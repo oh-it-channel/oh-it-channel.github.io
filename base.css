@@ -1,0 +1,69 @@
+﻿body {
+	background-color: #DFF5FF;
+}
+a:link {
+	color: blue;
+}
+a:visited {
+	color: purple;
+}
+a:hover {
+	border-color: blue;
+	background-color: yellow;
+}
+div#main {
+	width: 750px;
+	margin : 0 auto;
+}
+div#menu {
+	height: 1.5em;
+	background-color: #044583;
+	font-size: 1.2em;
+	margin-right: 0em;
+	padding-top: 0.3em;
+	text-align: center;
+}
+div#menu a:link {
+	color: white;
+}
+div#menu a:visited {
+	color: white;
+}
+div#menu a:hover {
+	background-color: #00A0E9;
+}
+div#contents {
+	background-color: #DFF5FF;
+	font-size: 1.2em;
+	line-height: 1.3em;
+}
+h1 {
+	border: 2px solid #044583;
+	background-color: white;
+	font-size: 1.2em;
+	text-align: center;
+}
+h2 {
+	background-color: #C8F3FF;
+	border: 1px solid #00A0E9;
+	border-left: 1.2em solid #00A0E9;
+	font-size: 1.0em;
+}
+h3 {
+	background-color: #DFF5FF;
+	font-weight: normal;
+	font-size: 1.0em;
+}
+
+div.box {
+width:100%; /* 横幅 */
+height:300px; /* 縦幅 */
+overflow:auto;
+background-color:#FFF; /* 背景色 */
+border:1px #FFFFFF dashed; /* 枠 */
+font-size:85%; /* 文字サイズ */
+color:#000000; /* 文字色 */
+}
+div.box p {
+margin:0.2em; /* 行間 */
+}
