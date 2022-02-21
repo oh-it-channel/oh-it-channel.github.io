@@ -4,7 +4,7 @@
 @media screen and (max-width: 519px) {
     /*ナビゲーション固定分下げる*/
     main{
-        margin-top: 60px;
+        margin-top: 100px;
     }
     
     .swiper-container{
