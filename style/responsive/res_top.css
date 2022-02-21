@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/*スマホ*/
+@media screen and (max-width: 600px) {
+
+    /*SNS*/
+    .sns-images{
+        display: block;
+    }
+
+    .sns-images li{
+        margin-bottom: 50px;
+    }
+
+}

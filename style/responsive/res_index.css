@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*スマホ*/
+@media screen and (max-width: 519px) {
+    h2{
+        font-size: 32px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    p, section ul{
+        font-size: 16px;
+        /*background-color: cornsilk;*/
+    }
+
+    .main-contents{
+        width: 90%;
+    }
+
+    .box-white{
+        padding: 0.5rem;
+    }
+    
+    .box-blue{
+        padding: 0.5rem;
+    }
+    
+    .contents-button a{
+        width: 100px;
+        background-color: #ffffff;
+        font-size: 16px;
+    }
+    
+    .contents-button a::after {
+        pointer-events: none; 
+        }
+    
+    .contents-button a:hover {
+        pointer-events: none; 
+    }
+    
+    .contents-button a:hover::after {
+        border-top: 3px solid #ffffff;
+        border-right: 3px solid #ffffff;
+    }
+
+}

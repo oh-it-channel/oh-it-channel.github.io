@@ -1,48 +1,152 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="ja">
-<head>
-	<meta name="robots" content="index,follow">
-	<meta name="description" content="Oh! IT Channel">
-	<meta name="keywords" content="大阪工業大学,情報科学部">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Oh! IT Channel</title>
-	<link rel="stylesheet" type="text/css" href="base.css">
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!--インデックスCSS，ナビゲーションCSS-->
+        <link rel="stylesheet" href="./style/reset.css">
+        <link rel="stylesheet" href="./style/PC/index.css">
+        <link rel="stylesheet" href="./style/PC/nav.css">
+        <link rel="stylesheet" href="./style/PC/info.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="./style/PC/header.css">
+        <link rel="stylesheet" href="./style/PC/top.css">
 
-</head>
+        <!--レスポンシブCSS-->
+        <link rel="stylesheet" href="./style/responsive/res_index.css">
+        <link rel="stylesheet" href="./style/responsive/res_nav.css">
+        <link rel="stylesheet" href="./style/responsive/res_info.css">
+        <link rel="stylesheet" href="./style/responsive/res_top.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <title>Oh! IT Channel</title>
+    </head>
+    <body>
+        <!--マスク処理-->
+        <div class="mask" id="mask"></div>
+        <div id="wrap">
+            <!--タイトルとメニューバー-->
+            <header>
+                <!--ハンバーガーメニュー-->
+                <a class="menu-button" id="menu-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
 
-<body>
-<div id="main">
+                <!--ナビゲーションバー-->
+                <div class="nav-bar">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./index_image/logo/logo.png" alt="" class="main-title"></a>
+                    </div>
+                    <nav id="nav-selector" class="nav-selector">
+                        <ul>
+                            <li class="nav-item"><a class="selected" href="./index.html">TOP</a></li>
+                            <li class="nav-item"><a href="./member.html">メンバー</a></li>
+                            <li class="nav-item"><a href="./event.html">イベントリスト</a></li>
+                            <li class="nav-item"><a href="./activities.html">活動履歴</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
-<center><h1>Oh! IT Channel</h1></center>
+                <!--ヘッダー-->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./index_image/header/header_image1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./index_image/header/header_image2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./index_image/header/header_image3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./index_image/header/header_image4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./index_image/header/header_image5.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./index_image/header/header_image6.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </header>
 
-<div id="menu">
-<font color="white"><b>
-<a href="index.html">ホーム</a> |
-<a href="event.html">過去のイベント</a> |
-</b></font>
-</div>
+            <!--メインコンテンツ-->
+            <main>
+                <article>
+                    <!--新着情報-->
+                    <section class="box-white">
+                        <div class="main-contents">
+                            <h2>News</h2>
+                            <iframe src="info.html" class="info-box">
+                                インラインフレーム対応ブラウザでご覧いただけます。
+                            </iframe>
+                        </div>
+                    </section>
 
-<div id="contents">
+                    <!--概要説明-->
+                    <section class="box-blue">
+                        <div class="main-contents">
+                            <h2>About</h2>
+                            <div class="about-text">
+                                <p>
+                                    Oh!ITchannelとは、大阪工業大学枚方キャンパスの魅力を多くの人に知ってもらうために結成された情報科学部大学院生による学生プロジェクトです。(情報科学部から資金や施設を提供していただき活動しています)<br>
+                                    普段の活動内容として、授業や研究、学生の日常であったり枚方キャンパスに関するさまざまな情報YouTubeやInstaglam、TwitterなどのSNSを通して発信していきます！！！
+                                </p>
+                            </div>
+                            <img src="./index_image/About/icon.png" alt="" class="about-image">
+                            <div class="contents-button">
+                                <a href="./member.html">メンバーをCHECK！</a>
+                            </div>
+                        </div>
+                    </section>
 
-<h2>Oh! IT Channelとは</h2>
-<h3>
-　　Oh! IT Channelは、大阪工業大学情報科学部の大学院生が中心となって、大阪工業大学情報科学部の魅力を発信する団体です。
-</h3>
+                    <!--SNS-->
+                    <section class="box-white">
+                        <div class="main-contents">
+                            <h2>SNS</h2>
+                            <div class="sns-text">
+                                <p>
+                                    YouTubeやTwitter，Instagramで情報科学部の情報を発信しています！フォローしてぜひチェックしてください！
+                                </p>
+                            </div>
+                            <ul class="sns-images">
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCBF_4PB_w_rLQwC25S_obXw" target="_blank"><img src="./index_image/SNS/youtube_social_circle_red.png" alt="" class="sns-logo"></a>
+                                    <br><a href="https://www.youtube.com/channel/UCBF_4PB_w_rLQwC25S_obXw" target="_blank" class="sns-link">Youtube</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="https://twitter.com/Oh_IT_Channel" target="_blank"><img src="./index_image/SNS/Twitter social icons - circle - blue.png" alt="" class="sns-logo"></a>
+                                    <br><a href="https://www.youtube.com/channel/UCBF_4PB_w_rLQwC25S_obXw" target="_blank" class="sns-link">Twitter</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/oh_it_channel/"target="_blank"><img src="./index_image/SNS/Instagram_Glyph_Gradient_RGB.png" alt="" class="sns-logo"></a>
+                                    <br><a href="https://www.youtube.com/channel/UCBF_4PB_w_rLQwC25S_obXw" target="_blank" class="sns-link">Instagram</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </article>
+            </main>
 
-
-<h2>連絡先</h2>
-<table border=0>
-<tr><td>所属</td><td>：大阪工業大学情報科学部コンピュータ科学科</td></tr>
-<tr><td>所在地</td><td>：〒573-0196　大阪府枚方市北山 1-79-1</td></tr>
-<tr><td></td><td>　1号館515研究室</td></tr>
-<tr><td>E-mail</td><td>：hirotsugu.okuno [ATMARK] oit.ac.jp</td></tr>
-</table>
-
-</div>
-
-<hr>
-<div align= "right">Copyright &copy 2021　Oh! IT Channel　All Rights Reserved.</div>
-
-</div>
-</body>
+            <!--フッター-->
+            <footer>
+                <div class="footer-contents">
+                    <h3>Menu</h3>
+                    <ul>
+                        <a href="./index.html"><li>TOP</li></a>
+                        <a href="./member.html"><li>メンバー</li></a>
+                        <a href="./event.html"><li>イベントリスト</li></a>
+                        <a href="./activities.html"><li>活動履歴</li></a>
+                    </ul>
+                </div>
+                <div class="footer-contents">
+                <h3>SNS</h3>
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCBF_4PB_w_rLQwC25S_obXw" target="_blank">Youtube</a></li>
+                        <li><a href="https://twitter.com/Oh_IT_Channel" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/oh_it_channel/"target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+                <small class="clear">&copy;2021 Oh! IT Channel</small>
+            </footer>
+        </div>
+        
+        <!--JavaScript読み込み-->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src = "./js/header.js"></script>
+        <script src="./js/nav.js"></script>
+    </body>
 </html>

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*自己紹介カード*/
+.box-introduction{
+    display: flex;
+    /*background-color: #ccc;*/
+    margin-top: auto;
+    margin-bottom: 80px;
+    background: #FFF;
+    border-top: solid 5px #0BA3E9;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+/*自己紹介カード右側*/
+.box-text{
+    width: 50%;
+    margin: auto 0.5rem;
+    /*background-color: cornsilk;*/
+    text-align: left;
+}
+
+.box-text li{
+    list-style: none;
+    font-weight: 600;
+}
+
+/*自己紹介カード左側*/
+.box-img{
+    width: 50%;
+    margin: auto;
+    /*background-color: cornsilk;*/
+}
+
+.avatar-photo{
+    max-width: 300px;
+    height: auto;
+    padding: 5px;
+}
+
+.profile-name{
+    font-weight: 600;
+    margin: 10px auto;
+}

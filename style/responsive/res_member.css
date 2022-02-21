@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*以下レスポンシブ*/
+@media screen and (max-width: 767px) {
+    .box-introduction {
+        display: block;
+        background: #FFF;
+        border-top: solid 0px #B0DEEC;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0.22);
+    }
+
+    .box-introduction .box-text {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .box-introduction .box-img {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .avatar-photo{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius:100%;
+    }
+}
+
+/*スマホ*/
+@media screen and (max-width: 519px) {
+    
+
+
+}

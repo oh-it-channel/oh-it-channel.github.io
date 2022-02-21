@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*dl{
+    width:500px;
+}*/
+
+.news-contents{
+    border-bottom:1px solid #ccc;
+}
+
+dt{
+    /*border-bottom:1px solid #ccc;*/
+    float:left;
+    padding:10px 5px;
+}
+
+dd{
+    /*border-bottom:1px solid #ccc;*/
+    margin-left:100px;
+    padding:10px 5px;
+}
+
+dl a{
+    background-color: #E9B3A3;
+    border-radius:5px;
+    color:#fdfdfd;
+    margin:0 20px;
+    padding:5px 15px;
+    text-decoration:none;
+}

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    opacity: 0.4;
+    overflow: hidden;
+    transition: .7s;
+}
+
+.swiper-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    --swiper-navigation-color: #ffbb00; 
+}

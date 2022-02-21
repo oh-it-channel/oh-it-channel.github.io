@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+/*スマホ*/
+@media screen and (max-width: 519px) {
+    /*ナビゲーション固定分下げる*/
+    main{
+        margin-top: 60px;
+    }
+    
+    .swiper-container{
+        margin-top: 60px;
+    }
+    
+    /*メインタイトル　Oh! IT Channel*/
+    .main-title{
+        max-height: 45px;
+        width: auto;
+        margin: 15px 50px 15px 5%;
+    }
+
+    .logo{
+        text-align: left;
+    }
+
+    /*ハンバーガーメニュー*/
+    .menu-button {
+        display: block;
+        height: 50px;
+        width: 50px;
+        background: #6dcfec;
+        position: fixed;                      
+        top: 0;
+        right: 0;
+        z-index: 3;
+    }
+
+    .menu-button div {
+        height: 2px;
+        width: 60%;
+        background: #fdfdfd;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.3s;
+    }
+
+    .menu-button div:nth-of-type(1) {
+        transform: translate(-50%, -10px);
+    }
+
+    .menu-button div:nth-of-type(3) {
+        transform: translate(-50%, 10px);
+    }
+
+    
+    /*クリック後のハンバーガーメニュー*/
+    .menu-button.active div:nth-of-type(1) {
+        transform: rotate(45deg) translate(-50%, 0px);
+        transform-origin: 0% 50%;
+    }
+
+    .menu-button.active div:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .menu-button.active div:nth-of-type(3) {
+        transform: rotate(-45deg) translate(-50%, 0px);
+        transform-origin: 0% 50%;
+    }
+
+    
+    /*ナビゲーション*/
+    .nav-bar{
+        /*リセット*/
+        padding: 0;
+        box-shadow: none;
+        
+        /*変更*/
+        height:  80px;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+    }
+    
+    .nav-selector {
+        /*リセット*/
+        padding: 0;
+        
+        /*変更*/
+        transform: translateX(100%);
+        transition: 0.3s;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #6dcfec;
+        font-size: 30px;
+        padding: 80px 0 0;
+        width: 50%;
+    }
+
+    .nav-selector ul {
+        /*リセット*/
+        display: block;
+    }
+    
+    .nav-selector ul li{
+        /*リセット*/
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .nav-selector a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: #6dcfec;
+        font-size: 18px;
+        color: #fdfdfd;
+        border-top: solid 0.5px #fdfdfd;
+        padding: 10px;
+    }
+    
+    /*マウスカーソルが重なった時の効果をリセット*/
+    .nav-item:hover{
+        transform: scale(1);
+    }
+    
+    .nav-item a:hover{
+        padding-right: 10px;
+        border-bottom: none; 
+    }
+
+    
+    /*クリック後のナビゲーション*/
+    .nav-selector.active {
+        transform: translateX(0%);
+    }
+
+    .selected{
+        border-bottom: none;
+    }
+
+    
+    /*マスク(ハンバーガーメニュークリック後コンテンツにぼやがかかる)*/
+    .mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.7;
+        visibility: hidden;
+        transition: 0.2s;
+    }
+
+    .mask.active {
+        opacity: 0.7;
+        visibility: visible;
+    }
+
+}

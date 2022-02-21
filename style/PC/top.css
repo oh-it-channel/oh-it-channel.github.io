@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*News*/
+.info-box{
+    width: 100%;
+    max-width: 980px;
+    height: 300px;
+    display: block;
+    margin: 50px auto;
+}
+
+/*About*/
+.about-text{
+    text-align: left;
+}
+
+.about-image{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 100%;
+    margin: 50px auto;
+}
+
+/*SNS*/
+.sns-text{
+    text-align: left;
+}
+
+.sns-images{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.sns-images li{
+    list-style: none;
+}
+
+.sns-logo{
+    width: 120px;
+    margin: 50px 50px;
+}
+
+.sns-link {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+}

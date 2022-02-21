@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.events{
+    /*background-color: darkgray;*/
+    margin: auto 20%;
+}
+
+.events li{
+    text-align: left;
+}

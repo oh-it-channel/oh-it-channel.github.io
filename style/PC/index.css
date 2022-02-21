@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+#wrap{
+    max-width: 100%;
+    /*text-align: center;*/
+}
+
+h2{
+    font-size: 44px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+h2:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;/*線の上下位置*/
+    display: inline-block;
+    width: 95%;/*線の長さ*/
+    height: 4px;/*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);/*位置調整*/
+    background-color: #333;/*線の色*/
+    border-radius: 10px;/*線の丸み*/
+}
+
+h3{
+    font-size: 24px;
+    margin: 5px;
+}
+
+p, section ul{
+    font-size: 18px;
+    line-height: 1.8rem;
+    /*background-color: cornsilk;*/
+}
+
+.list-contents li{
+    list-style-type: none; /*点を非表示*/
+    position: relative; /*基準位置*/
+    padding-left: 0.6em;
+    }
+
+.list-contents li:before {
+    border-radius: 50%; /*丸くする*/
+    width: 6px; /*点の幅*/
+    height: 6px; /*点の高さ*/
+    display: block;
+    position: absolute; /*絶対配置*/
+    left: 0; /*点の位置*/
+    top: 0.3em; /*点の位置*/
+    content: "";
+    background: #333; /*点の色*/
+}
+
+.main-contents{
+    width: 70%;
+    max-width: 980px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box-white{
+    min-height: 400px;
+    background-color: #fdfdfd;
+    padding: 50px;
+}
+
+.box-blue{
+    min-height: 400px;
+    background-color: #B0DEEC;
+    padding: 50px;
+}
+
+.contents-button a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1em 2em;
+    width: 200px;
+    color: #0BA3E9;
+    font-size: 18px;
+    font-weight: 700;
+    border: 3px solid #0BA3E9;
+    border-radius: 10px;
+}
+
+.contents-button a::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #0BA3E9;
+    border-right: 3px solid #0BA3E9;
+    transform: rotate(45deg);
+    }
+
+.contents-button a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0BA3E9;
+}
+
+.contents-button a:hover::after {
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+}
+
+/*フッター*/
+footer{
+    width: 100%;
+    background-color: #B0DEEC;
+    text-align: center;
+    border-top: double 5px #fdfdfd;
+}
+
+.footer-contents{
+    display: inline-block;
+    margin: 10px;
+    height: 150px;
+    width: 150px;
+    vertical-align: top;
+}
+
+footer h3{
+    font-size: 18px;
+    margin: 10px 0;
+    border-bottom: solid 2px #333;
+}
+
+footer li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+footer a{
+    color: #333;
+    text-decoration: none;
+}
+
+
+small{
+    font-size: 12px;
+    padding: 10px;
+}
+
+/*その他*/
+.clear{
+    display: block;
+}
+
+.left{
+    text-align: left;
+}

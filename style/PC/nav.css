@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+.nav-bar{
+    background:#fdfdfd;
+    box-shadow:0 3px 5px #ccc;
+    width:100%;
+    text-align:center;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+.main-title{
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.logo{
+    text-align: center;
+}
+
+.nav-selector {
+    padding: 10px;
+    /*outline: solid #000;*/
+}
+
+.nav-selector ul {
+    /* flexboxでナビゲーションバーを横並び配置する */
+    display: flex;
+    /* 縦幅中央に配置する指定 */
+    align-items: center;
+    /* 横幅中央に配置する指定 */
+    justify-content: center;
+    width: 100%;
+    /* リストスタイルを削除 */
+    list-style: none;
+}
+
+.nav-selector ul li {
+    /* ナビゲーションメニュー同士の間隔を指定 */
+    margin-left: 3%;
+    margin-right: 3%;
+    /*outline: solid #ccc;*/
+}
+
+.nav-item a{
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-item a::after{
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ffbb00;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    border-radius: 10px;
+    transition: transform .3s;
+}
+
+.nav-item a:hover::after {
+    transform: scale(1, 1);
+}
+
+.selected {
+    border-bottom: 3px solid #ffbb00;
+}
