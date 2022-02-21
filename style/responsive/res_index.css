@@ -35,15 +35,17 @@
     
     .contents-button a::after {
         pointer-events: none; 
-        }
+    }
     
     .contents-button a:hover {
-        pointer-events: none; 
+        color: #0BA3E9;
+        text-decoration: none;
+        background-color: #ffffff; 
     }
     
     .contents-button a:hover::after {
-        border-top: 3px solid #ffffff;
-        border-right: 3px solid #ffffff;
+        border-top: 3px solid #0BA3E9;
+        border-right: 3px solid #0BA3E9;
     }
 
 }
