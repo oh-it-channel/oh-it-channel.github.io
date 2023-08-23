@@ -17,6 +17,12 @@
         <link rel="stylesheet" href="./style/responsive/res_info.css">
         <link rel="stylesheet" href="./style/responsive/res_top.css">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+        <!--フォント-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Train+One&display=swap" rel="stylesheet">
+
         <title>Oh! IT Channel</title>
     </head>
     <body>
@@ -40,9 +46,9 @@
                     <nav id="nav-selector" class="nav-selector">
                         <ul>
                             <li class="nav-item"><a class="selected" href="./index.html">TOP</a></li>
-                            <li class="nav-item"><a href="./member.html">メンバー</a></li>
-                            <li class="nav-item"><a href="./event.html">イベントリスト</a></li>
-                            <li class="nav-item"><a href="./activities.html">活動履歴</a></li>
+                            <li class="nav-item"><a href="./member.html">MEMBER</a></li>
+                            <li class="nav-item"><a href="./event.html">EVENT</a></li>
+                            <li class="nav-item"><a href="./history.html">HISTORY</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -64,58 +70,99 @@
 
             <!--メインコンテンツ-->
             <main>
+                <div class="bg_pattern Polka"></div>
                 <article>
-                    <!--新着情報-->
-                    <section class="box-white">
+                    <!--概要説明-->
+                    <section>
                         <div class="main-contents">
-                            <h2>News</h2>
-                            <iframe src="info.html" class="info-box">
-                                インラインフレーム対応ブラウザでご覧いただけます。
-                            </iframe>
+                            <div class="card">
+                                <span class="close-icon">×</span>
+                                <span class="square-icon">□</span>
+                                <span class="line-icon">‐</span>
+                                <h2>ABOUT</h2>
+                                <div class="text-contents">
+                                    <p>
+                                        Oh!ITchannelとは、大阪工業大学枚方キャンパスの魅力を多くの人に知ってもらうために結成された情報科学部大学院生による学生プロジェクトです。(情報科学部から資金や施設を提供していただき活動しています)<br>
+                                        普段の活動内容として、授業や研究、学生の日常であったり枚方キャンパスに関するさまざまな情報YouTubeやInstaglam、TwitterなどのSNSを通して発信していきます！！！
+                                    </p>
+                                </div>
+                                <div class="youtube">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CjhyZSUqgKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
-                    <!--概要説明-->
-                    <section class="box-blue">
+                    <!--MEMBER-->
+                    <section>
                         <div class="main-contents">
-                            <h2>About</h2>
-                            <div class="about-text">
-                                <p>
-                                    Oh!ITchannelとは、大阪工業大学枚方キャンパスの魅力を多くの人に知ってもらうために結成された情報科学部大学院生による学生プロジェクトです。(情報科学部から資金や施設を提供していただき活動しています)<br>
-                                    普段の活動内容として、授業や研究、学生の日常であったり枚方キャンパスに関するさまざまな情報YouTubeやInstaglam、TwitterなどのSNSを通して発信していきます！！！
-                                </p>
-                            </div>
-                            <img src="./index_image/About/icon.png" alt="" class="about-image">
-                            <div class="contents-button">
-                                <a href="./member.html">メンバーをCHECK！</a>
+                            <div class="card">
+                                <span class="close-icon">×</span>
+                                <span class="square-icon">□</span>
+                                <span class="line-icon">‐</span>
+                                <h2>MEMBER</h2>
+                                <ul class="member-list">
+                                    <li class="item n01">
+                                        <img src="./member_image/satou.png" alt="">
+                                        <p>さとう</p>
+                                    </li>
+                                    <li class="item n02">
+                                        <img src="./member_image/noppi.png" alt="">
+                                        <p>のっぴ</p>
+                                    </li>
+                                    <li class="item n03">
+                                        <img src="./member_image/hakim.png" alt="">
+                                        <p>はきむ</p>
+                                    </li>
+                                    <li class="item n04">
+                                        <img src="./member_image/io.png" alt="">
+                                        <p>いお</p>
+                                    </li>
+                                    <li class="item n05">
+                                        <img src="./member_image/komi.png" alt="">
+                                        <p>こみ</p>
+                                    </li>
+                                    <li class="item n06">
+                                        <img src="./member_image/rika.png" alt="">
+                                        <p>りか</p>
+                                    </li>
+                                </ul>
+                                <div class="contents-button">
+                                    <a href="./member.html">メンバーをCHECK！</a>
+                                </div>
                             </div>
                         </div>
                     </section>
 
                     <!--SNS-->
-                    <section class="box-white">
+                    <section>
                         <div class="main-contents">
-                            <h2>SNS</h2>
-                            <div class="sns-text">
-                                <p>
-                                    YouTubeやTwitter、Instagramで情報科学部の情報を発信しています！フォローしてぜひチェックしてください！
-                                </p>
+                            <div class="card">
+                                <span class="close-icon">×</span>
+                                <span class="square-icon">□</span>
+                                <span class="line-icon">‐</span>
+                                <h2>SNS</h2>
+                                <div class="text-contents">
+                                    <p>
+                                        YouTubeやTwitter、Instagramで情報を発信しています！いいね＆フォローお願いします！
+                                    </p>
+                                </div>
+                                <ul class="sns-images">
+                                    <li>
+                                        <a href="https://www.youtube.com/channel/UCBF_4PB_w_rLQwC25S_obXw" target="_blank"><img src="./index_image/SNS/youtube_social_circle_red.png" alt="" class="sns-logo"></a>
+                                        <br><a href="https://www.youtube.com/channel/UCBF_4PB_w_rLQwC25S_obXw" target="_blank" class="sns-link">Youtube</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://twitter.com/Oh_IT_Channel" target="_blank"><img src="./index_image/SNS/Twitter social icons - circle - blue.png" alt="" class="sns-logo"></a>
+                                        <br><a href="https://twitter.com/Oh_IT_Channel" target="_blank" class="sns-link">Twitter</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/oh_it_channel/"target="_blank"><img src="./index_image/SNS/Instagram_Glyph_Gradient_RGB.png" alt="" class="sns-logo"></a>
+                                        <br><a href="https://www.instagram.com/oh_it_channel/" target="_blank" class="sns-link">Instagram</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="sns-images">
-                                <li>
-                                    <a href="https://www.youtube.com/channel/UCBF_4PB_w_rLQwC25S_obXw" target="_blank"><img src="./index_image/SNS/youtube_social_circle_red.png" alt="" class="sns-logo"></a>
-                                    <br><a href="https://www.youtube.com/channel/UCBF_4PB_w_rLQwC25S_obXw" target="_blank" class="sns-link">Youtube</a>
-                                </li>
-                                
-                                <li>
-                                    <a href="https://twitter.com/Oh_IT_Channel" target="_blank"><img src="./index_image/SNS/Twitter social icons - circle - blue.png" alt="" class="sns-logo"></a>
-                                    <br><a href="https://twitter.com/Oh_IT_Channel" target="_blank" class="sns-link">Twitter</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/oh_it_channel/"target="_blank"><img src="./index_image/SNS/Instagram_Glyph_Gradient_RGB.png" alt="" class="sns-logo"></a>
-                                    <br><a href="https://www.instagram.com/oh_it_channel/" target="_blank" class="sns-link">Instagram</a>
-                                </li>
-                            </ul>
                         </div>
                     </section>
                 </article>
@@ -127,9 +174,9 @@
                     <h3>Menu</h3>
                     <ul>
                         <a href="./index.html"><li>TOP</li></a>
-                        <a href="./member.html"><li>メンバー</li></a>
-                        <a href="./event.html"><li>イベントリスト</li></a>
-                        <a href="./activities.html"><li>活動履歴</li></a>
+                        <a href="./member.html"><li>MEMBER</li></a>
+                        <a href="./event.html"><li>EVENT</li></a>
+                        <a href="./history.html"><li>HISTORY</li></a>
                     </ul>
                 </div>
                 <div class="footer-contents">
@@ -140,7 +187,7 @@
                         <li><a href="https://www.instagram.com/oh_it_channel/"target="_blank">Instagram</a></li>
                     </ul>
                 </div>
-                <small class="clear">&copy;2021 Oh! IT Channel</small>
+                <small class="clear">&copy;2021-2023 Oh! IT Channel</small>
             </footer>
         </div>
         

@@ -1,10 +1,27 @@
 @charset "UTF-8";
 
 body {
-    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-family: 'DotGothic16', sans-serif;
     background-color: #fdfdfd;
     color: #333;
 }
+
+.bg_pattern {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.Polka {
+    background-image: radial-gradient(#ffc107 2px, #ffffff 2px);
+    background-size: 20px 20px;
+}
+
 
 #wrap{
     max-width: 100%;
@@ -12,24 +29,10 @@ body {
 }
 
 h2{
+    font-family: 'DotGothic16', sans-serif;
     font-size: 44px;
-    position: relative;
     display: inline-block;
-    margin-bottom: 30px;
-}
-
-h2:before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -5px;/*線の上下位置*/
-    display: inline-block;
-    width: 95%;/*線の長さ*/
-    height: 4px;/*線の太さ*/
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);/*位置調整*/
-    background-color: #333;/*線の色*/
-    border-radius: 10px;/*線の丸み*/
+    margin-top: 50px;
 }
 
 h3{
@@ -43,11 +46,17 @@ p, section ul{
     /*background-color: cornsilk;*/
 }
 
+.text-contents {
+    width: 80%;
+    text-align: justify;
+    margin: 20px auto;
+}
+
 .list-contents li{
     list-style-type: none; /*点を非表示*/
     position: relative; /*基準位置*/
     padding-left: 0.6em;
-    }
+}
 
 .list-contents li:before {
     border-radius: 50%; /*丸くする*/
@@ -62,23 +71,69 @@ p, section ul{
 }
 
 .main-contents{
+    position: relative; /* 相対位置指定 */
     width: 70%;
     max-width: 980px;
     margin: 30px auto;
     text-align: center;
 }
 
-.box-white{
-    min-height: 400px;
-    background-color: #fdfdfd;
-    padding: 50px;
+.card{
+    border-top-width: 30px; /* 上部の枠線の太さを指定 */
+    border-radius: 10px; /* 角を丸くする */
+    padding: 35px 20px; /* 内側の余白を指定 */
+    margin: 50px auto; /* 枠を中央に配置 */
+    background: #fdfdfd;
+    box-sizing: border-box; /* 枠線を含めたボックスサイズを指定 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.box-blue{
-    min-height: 400px;
-    background-color: #B0DEEC;
-    padding: 50px;
+/* グラデーション上部のライン */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px; /* 上部の線の高さを設定 */
+    background: linear-gradient(to right, #02A0E9, #7ED6FE); /* グラデーションの設定 */
+    border-top-left-radius: 10px; /* 角を丸くする */
+    border-top-right-radius: 10px; /* 角を丸くする */
 }
+
+.close-icon {
+    position: absolute; /* 絶対位置指定 */
+    top: -5px; /* 上からの距離 */
+    right: 20px; /* 右からの距離 */
+    font-size: 30px; /* フォントサイズ */
+}
+
+.square-icon {
+    position: absolute; /* 絶対位置指定 */
+    top: 5px; /* 上からの距離 */
+    right: 50px; /* 右からの距離 */
+    font-size: 20px; /* フォントサイズ */
+}
+
+.line-icon {
+    position: absolute; /* 絶対位置指定 */
+    top: 0px; /* 上からの距離 */
+    right: 80px; /* 右からの距離 */
+    font-size: 30px; /* フォントサイズ */
+}
+
+.youtube{
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    margin: 50px auto;
+}
+
+.youtube iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
 
 .contents-button a{
     text-decoration: none;
@@ -88,10 +143,10 @@ p, section ul{
     margin: 0 auto;
     padding: 1em 2em;
     width: 200px;
-    color: #0BA3E9;
+    color: #02A0E9;
     font-size: 18px;
     font-weight: 700;
-    border: 3px solid #0BA3E9;
+    border: 3px solid #02A0E9;
     border-radius: 10px;
 }
 
@@ -99,15 +154,15 @@ p, section ul{
     content: '';
     width: 5px;
     height: 5px;
-    border-top: 3px solid #0BA3E9;
-    border-right: 3px solid #0BA3E9;
+    border-top: 3px solid #02A0E9;
+    border-right: 3px solid #02A0E9;
     transform: rotate(45deg);
     }
 
 .contents-button a:hover {
     color: #ffffff;
     text-decoration: none;
-    background-color: #0BA3E9;
+    background-color: #02A0E9;
 }
 
 .contents-button a:hover::after {
@@ -118,9 +173,8 @@ p, section ul{
 /*フッター*/
 footer{
     width: 100%;
-    background-color: #B0DEEC;
+    background-image: linear-gradient(#02A0E9, #7ED6FE);
     text-align: center;
-    border-top: double 5px #fdfdfd;
 }
 
 .footer-contents{
@@ -134,7 +188,9 @@ footer{
 footer h3{
     font-size: 18px;
     margin: 10px 0;
-    border-bottom: solid 2px #333;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #fdfdfd;
+    color: #fdfdfd;
 }
 
 footer li{
@@ -143,7 +199,7 @@ footer li{
 }
 
 footer a{
-    color: #333;
+    color: #fdfdfd;
     text-decoration: none;
 }
 

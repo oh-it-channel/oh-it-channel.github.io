@@ -1,43 +1,126 @@
 @charset "UTF-8";
 
-/*自己紹介カード*/
-.box-introduction{
+.set-flex {
     display: flex;
-    /*background-color: #ccc;*/
-    margin-top: auto;
-    margin-bottom: 80px;
-    background: #FFF;
-    border-top: solid 5px #0BA3E9;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    flex-grow: 1;
 }
 
-/*自己紹介カード右側*/
-.box-text{
-    width: 50%;
-    margin: auto 0.5rem;
-    /*background-color: cornsilk;*/
+.member-card {
+    max-width: 100%; /* カードの幅を広げる */
+    background-image: linear-gradient(#02A0E9, #7ED6FE); /* グラデーションの追加 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 50px 20px;
+    border-radius: 15px; /* 15pxの値を調整して角の丸さを変えることができます */
+    margin-top: 40px; /* 上から40pxの余白を設定 */
+    margin-bottom: 40px; /* 下から40pxの余白を設定 */
+    border-top: 40px solid #FDFDFD; /* 上部に白い枠を追加 */
+    border-bottom: 40px solid #FDFDFD; /* 下部に白い枠を追加 */
+    color: #FDFDFD; /* テーブル内の文字の色を白に設定 */
+    position: relative;
+}
+
+.member-card-label {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute; /* 絶対位置に配置 */
+    top: -25px; /* 上からの位置 */
+    left: 20px; /* 左からの位置 */
+    color: #333; /* 文字色を白に設定 */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.image-item {
+    width: 30%;
+    margin: auto;
+}
+
+.text-item {
+    width: 70%;
+    margin: auto;
+}
+
+.container .item {
+    padding: 20px 20px;
     text-align: left;
 }
 
-.box-text li{
-    list-style: none;
-    font-weight: 600;
+.container .n01 {
+    /**background-color: #9ee295;**/
+
+    padding: 0;
+    text-align: center;
+}
+.container .n02 {
+    /**background-color: #cfd5ec;**/
+
+    width: 45%;
+    padding-right: 0px;
+}
+.container .n03 {
+    /**background-color: #eccfe5;**/
+
+    width: 55%;
+    padding-left: 0px;
+}
+.container .n04 {
+    /**background-color: #ece9cf;**/
+
+    flex-grow: 1;
 }
 
-/*自己紹介カード左側*/
-.box-img{
-    width: 50%;
-    margin: auto;
-    /*background-color: cornsilk;*/
+.container img{
+    width: 100%;
 }
 
-.avatar-photo{
-    max-width: 300px;
-    height: auto;
-    padding: 5px;
+.pokemon_number{
+    font-size: 1.4rem;
 }
 
-.profile-name{
-    font-weight: 600;
-    margin: 10px auto;
+.name {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 5rem;
+}
+
+.role {
+    font-size: 1.4rem;
+}
+
+.affiliation {
+    font-size: 1.4rem;
+}
+
+.description {
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.n03 table {
+    font-size: 1.4rem;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.n03 th{
+    width: 80px;
+    background-color: #FDFDFD; /* テーブルの背景色を青に設定 */
+    color: #02A0E9;
+    text-align: center;
+    vertical-align:middle;
+}
+
+.n03 td{
+    padding-left: 20px;
+    vertical-align:middle
+}
+
+.n03 th, td {
+    padding: 10px 5px;
 }

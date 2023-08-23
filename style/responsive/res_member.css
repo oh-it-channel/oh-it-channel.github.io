@@ -2,28 +2,64 @@
 
 /*以下レスポンシブ*/
 @media screen and (max-width: 767px) {
-    .box-introduction {
+    .container {
         display: block;
-        background: #FFF;
-        border-top: solid 0px #B0DEEC;
-        box-shadow: 0 0px 0px rgba(0, 0, 0, 0.22);
     }
 
-    .box-introduction .box-text {
-        width: 100%;
-        margin: 0 auto;
+    .set-flex {
+        display: block;
     }
 
-    .box-introduction .box-img {
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
+    .image-item {
+        width: 60%;
+        margin: auto;
     }
 
-    .avatar-photo{
+    .text-item {
         width: 100%;
-        max-width: 300px;
-        height: auto;
+        margin: auto;
+    }
+
+    .container .n02 {
+        /**background-color: #cfd5ec;**/
+    
+        width: 100%;
+        padding-right: 0px;
+    }
+    .container .n03 {
+        /**background-color: #eccfe5;**/
+    
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .pokemon_number{
+        font-size: 1.2rem;
+    }
+
+    .name {
+        font-size: 2.5rem;
+        line-height: 5rem;
+    }
+    
+    .role {
+        font-size: 1.2rem;
+    }
+    
+    .affiliation {
+        font-size: 1.2rem;
+    }
+    
+    .description {
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 2;
+    }
+    
+    .n03 table {
+        font-size: 1.2rem;
+        border-collapse: separate;
+        border-spacing: 5px;
     }
 }
 

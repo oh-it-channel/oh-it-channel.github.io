@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+h2{
+    margin: 50px auto;
+}
+
+h3{
+    font-size: 28px;
+}
+
+.timeline {
+    list-style: none;
+    margin-left: 60px;
+}
+
+.timeline > li {
+    margin-bottom: 60px;
+}
+
+.timeline-content ul {
+    margin-left: 30px;
+}
+
+.timeline-list{
+    text-align: left;
+}
+
+/* for Desktop */
+@media ( min-width : 875px ){
+    .timeline > li {
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+    }
+    .timeline-date {
+        width: 110px;
+        float: left;
+        margin-top: 30px;
+    }
+    .timeline-content {
+        width: 75%;
+        float: left;
+        border-left: 3px #caeeff solid;
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .timeline-content:before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: linear-gradient(to right, #02A0E9, #7ED6FE);
+        position: absolute;
+        left: 106px;
+        top: 40px;
+        border-radius: 100%;
+    }
+}

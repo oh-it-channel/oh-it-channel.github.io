@@ -15,7 +15,7 @@
     .main-title{
         max-height: 45px;
         width: auto;
-        margin: 15px 50px 15px 5%;
+        margin: 10px 0px 0px 5%;
     }
 
     .logo{
@@ -25,13 +25,13 @@
     /*ハンバーガーメニュー*/
     .menu-button {
         display: block;
-        height: 50px;
-        width: 50px;
-        background: #6dcfec;
+        height: 60px;
+        width: 60px;
+        background: #02A0E9;
         position: fixed;                      
         top: 0;
         right: 0;
-        z-index: 3;
+        z-index: 4;
     }
 
     .menu-button div {
@@ -77,10 +77,10 @@
         box-shadow: none;
         
         /*変更*/
-        height:  80px;
+        height:  60px;
         position: fixed;
         top: 0;
-        z-index: 2;
+        z-index: 3;
     }
     
     .nav-selector {
@@ -88,15 +88,15 @@
         padding: 0;
         
         /*変更*/
-        transform: translateX(100%);
+        transform: translateY(-100%);
         transition: 0.3s;
         position: fixed;
         top: 0;
         right: 0;
-        background-color: #6dcfec;
+        background-color: #02A0E9;
         font-size: 30px;
         padding: 80px 0 0;
-        width: 50%;
+        width: 100%;
     }
 
     .nav-selector ul {
@@ -116,7 +116,7 @@
         text-align: center;
         font-weight: bold;
         text-decoration: none;
-        background-color: #6dcfec;
+        background-color: #02A0E9;
         font-size: 18px;
         color: #fdfdfd;
         border-top: solid 0.5px #fdfdfd;
@@ -136,7 +136,7 @@
     
     /*クリック後のナビゲーション*/
     .nav-selector.active {
-        transform: translateX(0%);
+        transform: translateY(0%);
     }
 
     .selected{
@@ -149,7 +149,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 1;
+        z-index: 3;
         width: 100%;
         height: 100%;
         background-color: #fff;
