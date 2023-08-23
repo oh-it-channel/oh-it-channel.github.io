@@ -20,6 +20,10 @@
     padding: 10px;
 }
 
+.item p{
+    font-weight: bold;
+}
+
 /*SNS*/
 .sns-text{
     text-align: left;

@@ -25,6 +25,10 @@ h3{
     text-align: left;
 }
 
+.timeline-date{
+    font-weight: bold;
+}
+
 /* for Desktop */
 @media ( min-width : 875px ){
     .timeline > li {
