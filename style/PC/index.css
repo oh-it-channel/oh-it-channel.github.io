@@ -80,7 +80,7 @@ p, section ul{
 
 .card{
     border-top-width: 30px; /* 上部の枠線の太さを指定 */
-    border-radius: 10px; /* 角を丸くする */
+    border-radius: 25px; /* 角を丸くする */
     padding: 35px 20px; /* 内側の余白を指定 */
     margin: 50px auto; /* 枠を中央に配置 */
     background: #fdfdfd;
@@ -97,8 +97,8 @@ p, section ul{
     width: 100%;
     height: 30px; /* 上部の線の高さを設定 */
     background: linear-gradient(to right, #02A0E9, #7ED6FE); /* グラデーションの設定 */
-    border-top-left-radius: 10px; /* 角を丸くする */
-    border-top-right-radius: 10px; /* 角を丸くする */
+    border-top-left-radius: 25px; /* 角を丸くする */
+    border-top-right-radius: 25px; /* 角を丸くする */
 }
 
 .close-icon {

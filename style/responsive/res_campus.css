@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/* キャンパスページ レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    .campus-map-wrapper {
+        max-width: 95%;
+    }
+    
+    .marker-dot {
+        width: 16px;
+        height: 16px;
+        border-width: 2px;
+    }
+    
+    .marker-label {
+        font-size: 14px;
+        padding: 3px 6px;
+    }
+
+    .building-marker .marker-dot {
+        width: 20px;
+        height: 20px;
+    }
+
+    .map-nav-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .back-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    /* マップラベルの位置調整 */
+    .map-marker[data-location="library"] .marker-label {
+        transform: translateX(-50%);
+        top: 25px;
+    }
+    
+    /* 食堂マーカーのラベル位置調整 */
+    .map-marker[data-location="cafeteria"] .marker-label {
+        transform: translateX(-50%);
+        top: 25px;
+    }
+    
+    /* エントランスマーカーのラベル位置調整 */
+    .map-marker[data-location="entrance"] .marker-label {
+        transform: translateX(-50%);
+        top: 25px;
+    }
+
+    /* 屋上マーカーのラベル位置調整 */
+    .map-marker[data-location="rooftop"] .marker-label {
+        transform: translateX(-50%);
+        top: 25px;
+    }
+    
+    /* 休憩室マーカーのラベル位置調整 */
+    .map-marker[data-location="restroom"] .marker-label {
+        transform: translateX(-50%);
+        top: 25px;
+    }
+    
+    /* 1号館マーカーのラベル位置調整 */
+    .building-marker[data-building="building-1"] .marker-label {
+        transform: translateX(-50%);
+        top: 25px;
+    }
+    
+    /* スマホでの指さしアニメーション調整 */
+    .building-marker[data-building="building-1"]::after {
+        top: 25px;
+        left: 10px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    /* スマホでの「クリック！」テキスト調整 */
+    .building-marker[data-building="building-1"]::before {
+        top: 70px;
+        left: -170px;
+        font-size: 16px;
+        padding: 6px 10px;
+        border-radius: 10px;
+    }
+} 

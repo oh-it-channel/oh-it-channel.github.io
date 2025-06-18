@@ -10,7 +10,7 @@
     background-image: linear-gradient(#02A0E9, #7ED6FE); /* グラデーションの追加 */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding: 50px 20px;
-    border-radius: 15px; /* 15pxの値を調整して角の丸さを変えることができます */
+    border-radius: 30px; /* 30pxの値を調整して角の丸さを変えることができます */
     margin-top: 40px; /* 上から40pxの余白を設定 */
     margin-bottom: 40px; /* 下から40pxの余白を設定 */
     border-top: 40px solid #FDFDFD; /* 上部に白い枠を追加 */

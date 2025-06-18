@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!--インデックスCSS，ナビゲーションCSS-->
+        <link rel="stylesheet" href="./style/reset.css">
+        <link rel="stylesheet" href="./style/PC/index.css">
+        <link rel="stylesheet" href="./style/PC/history.css">
+        <link rel="stylesheet" href="./style/PC/nav.css">
+        <link rel="stylesheet" href="./style/PC/event.css">
+        <link rel="stylesheet" href="./style/PC/campus.css">
+        <link rel="stylesheet" href="./style/responsive/res_nav.css">
+
+        <!--レスポンシブCSS-->
+        <link rel="stylesheet" href="./style/responsive/res_index.css">
+        <link rel="stylesheet" href="./style/responsive/res_nav.css">
+        <link rel="stylesheet" href="./style/responsive/res_campus.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+        <!--フォント-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Train+One&display=swap" rel="stylesheet">
+        
+        <title>Oh! IT チャンネル</title>
+    </head>
+    <body>
+        <!--マスク処理-->
+        <div class="mask" id="mask"></div>
+        <div id="wrap">
+            <!--タイトルとメニューバー-->
+            <header>
+                <!--ハンバーガーメニュー-->
+                <a class="menu-button" id="menu-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
+
+                <!--ナビゲーションバー-->
+                <div class="nav-bar">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./index_image/logo/logo_o.png" alt="" class="main-title"></a>
+                    </div>
+                    <nav id="nav-selector" class="nav-selector">
+                        <ul>
+                            <li class="nav-item"><a href="./index.html">TOP</a></li>
+                            <li class="nav-item"><a href="./member.html">MEMBER</a></li>
+                            <li class="nav-item"><a href="./event.html">EVENT</a></li>
+                            <li class="nav-item"><a href="./history.html">HISTORY</a></li>
+                            <li class="nav-item"><a class="selected" href="./campus.html">CAMPUS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <!--メインコンテンツ-->
+            <main>
+                <div class="bg_pattern Polka"></div>
+                <article>
+                    <section>
+                        <div class="main-contents">
+                            <div class="card">
+                                <span class="close-icon">×</span>
+                                <span class="square-icon">□</span>
+                                <span class="line-icon">‐</span>
+                                <h2>キャンパスマップ</h2>
+                                <div class="map-info">
+                                    <p>ご覧になりたい場所のマーカーをクリックしてください</p>
+                                </div>
+                                <div class="campus-map-container">
+                                    <!-- マップ切り替えボタン -->
+                                    <!-- <div class="map-nav">
+                                        <button class="map-nav-btn active" data-map="campus-overview">キャンパス全体</button>
+                                        <button class="map-nav-btn" data-map="building-1">1号館</button>
+                                    </div> -->
+
+                                    <!-- キャンパス全体マップ -->
+                                    <div class="campus-map-wrapper active" id="campus-overview-map">
+                                        <!-- キャンパス全体マップ画像 -->
+                                        <img src="./index_image/campus_overview.png" alt="キャンパス全体マップ" class="campus-map" id="campus-overview" usemap="#campus-overview-areas">
+                                        
+                                        <!-- 画像マップ定義 -->
+                                        <map name="campus-overview-areas">
+                                            <area shape="rect" coords="150,120,250,220" alt="1号館" data-building="building-1">
+                                            <area shape="rect" coords="100,300,200,400" alt="DXフィールド" data-building="dxfield" href="#video-dxfield">
+                                        </map>
+                                        
+                                        <!-- マップ上のマーカー -->
+                                        <div class="map-marker building-marker" data-building="building-1" style="left: 62%; top: 45%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label">1号館</div>
+                                        </div>
+                                        <!-- <div class="map-marker location-marker" data-location="dxfield" style="left: 80%; top: 50%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label">DXフィールド</div>
+                                        </div> -->
+                                    </div>
+                                    
+                                    <!-- 1号館詳細マップ（初期状態では非表示） -->
+                                    <div class="campus-map-wrapper" id="building-1-map">
+                                        <!-- 1号館マップ画像 -->
+                                        <img src="./index_image/map.png" alt="1号館マップ" class="campus-map" id="building-1-map-img" usemap="#building-1-areas">
+                                        
+                                        <!-- 動画とマーカーの関連付け -->
+                                        <map name="building-1-areas">
+                                            <area shape="circle" coords="100,150,20" alt="図書館" data-location="library" href="#video-library">
+                                            <area shape="circle" coords="250,200,20" alt="食堂" data-location="cafeteria" href="#video-cafeteria">
+                                            <area shape="circle" coords="400,120,20" alt="キャンパス入口" data-location="entrance" href="#video-entrance">
+                                            <area shape="circle" coords="400,120,20" alt="屋上" data-location="rooftop" href="#video-rooftop">
+                                        </map>
+                                        
+                                        <!-- マップ上のマーカー -->
+                                        <div class="map-marker location-marker" data-location="library" data-x="100" data-y="150" style="left: 16%; top: 44%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label">図書館</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="cafeteria" data-x="250" data-y="200" style="left: 16%; top: 69%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label">食堂</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="entrance" data-x="400" data-y="120" style="left: 20%; top: 87%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label">外観＆エントランス</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="rooftop" data-x="400" data-y="120" style="left: 50%; top: 5%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label">屋上</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="restroom" data-x="400" data-y="120" style="left: 45%; top: 79%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label">休憩室</div>
+                                        </div>
+                                        
+                                        <!-- 戻るボタン -->
+                                        <div class="back-to-overview">
+                                            <button class="back-btn">キャンパス全体に戻る</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- 動画一覧 -->
+                                <!-- 下記URLhttps://www.youtube.com/embed/???????? の?部分に埋め込みたい動画のURLhttps://www.youtube.com/watch?v=????????の?部分を入れると動画が埋め込めます-->
+                                <div class="youtube-container">
+                                    <div class="youtube-grid">
+                                        <div class="youtube-item" id="video-entrance" data-location="entrance">
+                                            <div class="youtube-video">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/EG245SxX7hE" title="キャンパス入口紹介" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                            <h3>枚方キャンパスの外観・エントランス紹介</h3>
+                                            <p>枚方キャンパスの入口からエントランスまでをご紹介！</p>
+                                        </div>
+                                        <div class="youtube-item" id="video-restroom" data-location="restroom">
+                                            <div class="youtube-video">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/-s-pq_YwSKY" title="休憩室紹介" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                            <h3>休憩室紹介</h3>
+                                            <p>学生達のオアシスである休憩室をご紹介！</p>
+                                        </div>
+                                        <div class="youtube-item" id="video-library" data-location="library">
+                                            <div class="youtube-video">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/1tRSWK2KsGQ" title="図書館紹介" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                            <h3>図書館紹介</h3>
+                                            <p>ぐるりと周りを見渡せる360度動画で図書館をご紹介！</p>
+                                        </div>
+                                        
+                                        <div class="youtube-item" id="video-cafeteria" data-location="cafeteria">
+                                            <div class="youtube-video">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/NCUOYgkLr3Y" title="食堂紹介" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                            <h3>食堂紹介</h3>
+                                            <p>ぐるりと周りを見渡せる360度動画で食堂をご紹介！</p>
+                                        </div>
+                                        <div class="youtube-item" id="video-rooftop" data-location="rooftop">
+                                            <div class="youtube-video">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/8jTzgEBoxcM" title="屋上紹介" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                            <h3>屋上紹介</h3>
+                                            <p>滅多に見られない屋上を360度動画で大公開！</p>
+                                        </div>
+                                        <!-- <div class="youtube-item" id="video-dxfield" data-location="dxfield">
+                                            <div class="youtube-video">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/8jTzgEBoxcM" title="DXフィールド紹介" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                            <h3>DXフィールド紹介</h3>
+                                            <p>DXフィールドの様子をご覧ください。</p>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </main>
+
+            <!--フッター-->
+            <footer>
+                <div class="footer-contents">
+                    <h3>Menu</h3>
+                    <ul>
+                        <a href="./index.html"><li>TOP</li></a>
+                        <a href="./member.html"><li>MEMBER</li></a>
+                        <a href="./event.html"><li>EVENT</li></a>
+                        <a href="./history.html"><li>HISTORY</li></a>
+                    </ul>
+                </div>
+                <div class="footer-contents">
+                <h3>SNS</h3>
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCBF_4PB_w_rLQwC25S_obXw" target="_blank">Youtube</a></li>
+                        <li><a href="https://www.instagram.com/oh_it_channel/"target="_blank">Instagram</a></li>
+                        <li><a href="https://twitter.com/Oh_IT_Channel" target="_blank">X(旧Twitter)</a></li>
+                    </ul>
+                </div>
+                <small class="clear">&copy;2021-2025 Oh! IT チャンネル</small>
+            </footer>
+        </div>
+        
+        <!--JavaScript読み込み-->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src = "./js/header.js"></script>
+        <script src="./js/nav.js"></script>
+        <script src="./js/campus.js"></script>
+    </body>
+</html>
