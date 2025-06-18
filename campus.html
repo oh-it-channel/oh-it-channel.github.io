@@ -69,18 +69,13 @@
                                     <p>ご覧になりたい場所のマーカーをクリックしてください</p>
                                 </div>
                                 <div class="campus-map-container">
-                                    <!-- マップ切り替えボタン -->
-                                    <!-- <div class="map-nav">
-                                        <button class="map-nav-btn active" data-map="campus-overview">キャンパス全体</button>
-                                        <button class="map-nav-btn" data-map="building-1">1号館</button>
-                                    </div> -->
 
                                     <!-- キャンパス全体マップ -->
                                     <div class="campus-map-wrapper active" id="campus-overview-map">
                                         <!-- キャンパス全体マップ画像 -->
                                         <img src="./index_image/campus_overview.png" alt="キャンパス全体マップ" class="campus-map" id="campus-overview" usemap="#campus-overview-areas">
                                         
-                                        <!-- 画像マップ定義 -->
+                                        <!-- 建物マーカーの定義 -->
                                         <map name="campus-overview-areas">
                                             <area shape="rect" coords="150,120,250,220" alt="1号館" data-building="building-1">
                                             <area shape="rect" coords="100,300,200,400" alt="DXフィールド" data-building="dxfield" href="#video-dxfield">
@@ -103,7 +98,9 @@
                                         <img src="./index_image/map.png" alt="1号館マップ" class="campus-map" id="building-1-map-img" usemap="#building-1-areas">
                                         
                                         <!-- 動画とマーカーの関連付け -->
+                                        <!-- hrefに，「youtube-item」のidを入れると関連付けできる -->
                                         <map name="building-1-areas">
+                                            <area shape="circle" coords="100,150,20" alt="コンビニ" data-location="library" href="#video-library">
                                             <area shape="circle" coords="100,150,20" alt="図書館" data-location="library" href="#video-library">
                                             <area shape="circle" coords="250,200,20" alt="食堂" data-location="cafeteria" href="#video-cafeteria">
                                             <area shape="circle" coords="400,120,20" alt="キャンパス入口" data-location="entrance" href="#video-entrance">
@@ -111,6 +108,7 @@
                                         </map>
                                         
                                         <!-- マップ上のマーカー -->
+                                        <!-- styleでマーカーの位置を調整 -->
                                         <div class="map-marker location-marker" data-location="library" data-x="100" data-y="150" style="left: 16%; top: 44%;">
                                             <span class="marker-dot"></span>
                                             <div class="marker-label">図書館</div>
@@ -127,9 +125,13 @@
                                             <span class="marker-dot"></span>
                                             <div class="marker-label">屋上</div>
                                         </div>
-                                        <div class="map-marker location-marker" data-location="restroom" data-x="400" data-y="120" style="left: 45%; top: 79%;">
+                                        <div class="map-marker location-marker" data-location="restroom" data-x="400" data-y="120" style="left: 46%; top: 67%;">
                                             <span class="marker-dot"></span>
                                             <div class="marker-label">休憩室</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="convenience" data-x="100" data-y="150" style="left: 25%; top: 60%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label">コンビニ</div>
                                         </div>
                                         
                                         <!-- 戻るボタン -->
@@ -159,18 +161,38 @@
                                         </div>
                                         <div class="youtube-item" id="video-library" data-location="library">
                                             <div class="youtube-video">
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/1tRSWK2KsGQ" title="図書館紹介" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/FA19P8NfU9E" title="図書館紹介" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                             </div>
                                             <h3>図書館紹介</h3>
-                                            <p>ぐるりと周りを見渡せる360度動画で図書館をご紹介！</p>
+                                            <p>学生の学びを支える静寂な空間！図書館をご紹介！</p>
                                         </div>
-                                        
+                                        <div class="youtube-item" id="video-library" data-location="library">
+                                            <div class="youtube-video">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/1tRSWK2KsGQ" title="図書館紹介" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                            <h3>図書館の360度動画</h3>
+                                            <p>図書館をぐるりと周りを見渡せる360度動画でご紹介！</p>
+                                        </div>
+                                        <div class="youtube-item" id="video-cafeteria" data-location="cafeteria">
+                                            <div class="youtube-video">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/NKU-oz5DkIg" title="食堂紹介" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                            <h3>食堂紹介</h3>
+                                            <p>学生が集まる憩いの場！食堂をご紹介！</p>
+                                        </div>
                                         <div class="youtube-item" id="video-cafeteria" data-location="cafeteria">
                                             <div class="youtube-video">
                                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/NCUOYgkLr3Y" title="食堂紹介" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                             </div>
-                                            <h3>食堂紹介</h3>
-                                            <p>ぐるりと周りを見渡せる360度動画で食堂をご紹介！</p>
+                                            <h3>食堂の360度動画</h3>
+                                            <p>食堂をぐるりと周りを見渡せる360度動画でご紹介！</p>
+                                        </div>
+                                        <div class="youtube-item" id="video-convenience" data-location="convenience">
+                                            <div class="youtube-video">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Lm3hNHTHCMo" title="コンビニ紹介" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                            <h3>コンビニ紹介</h3>
+                                            <p>コンビニの様子をショート動画でご紹介！</p>
                                         </div>
                                         <div class="youtube-item" id="video-rooftop" data-location="rooftop">
                                             <div class="youtube-video">

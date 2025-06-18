@@ -61,7 +61,14 @@
         transform: translateX(-50%);
         top: 25px;
     }
-    
+
+    /* コンビニマーカーのラベル位置調整 */
+    .map-marker[data-location="convenience"] .marker-label {
+        transform: translateX(-50%);
+        top: 20px;
+        left: 20px;
+    }
+
     /* 1号館マーカーのラベル位置調整 */
     .building-marker[data-building="building-1"] .marker-label {
         transform: translateX(-50%);
