@@ -3,7 +3,7 @@
 /* キャンパスページ レスポンシブ対応 */
 @media screen and (max-width: 768px) {
     .campus-map-wrapper {
-        max-width: 95%;
+        max-width: 100%;
     }
     
     .marker-dot {
@@ -40,7 +40,7 @@
 
     .map-marker[data-location="dxfield"] .marker-label {
         transform: translateX(-50%);
-        top: 25px;
+        top: 20px;
     }
     
     /* 食堂マーカーのラベル位置調整 */
