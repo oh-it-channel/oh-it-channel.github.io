@@ -195,7 +195,7 @@
 
 /* 一号館マーカー用の「クリック！」テキスト */
 .building-marker[data-building="building-1"]::before {
-    content: 'クリックで1号館へ！';
+    content: 'マーカーをクリック！';
     position: absolute;
     top: 130px;
     left: -280px;

@@ -34,6 +34,11 @@
     
     /* マップラベルの位置調整 */
     .map-marker[data-location="library"] .marker-label {
+        transform: translateX(-55%);
+        top: 25px;
+    }
+
+    .map-marker[data-location="dxfield"] .marker-label {
         transform: translateX(-50%);
         top: 25px;
     }
