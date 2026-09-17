@@ -277,11 +277,11 @@ document.addEventListener('DOMContentLoaded', () => {
         "kirinkaku": {
             title: "麒麟閣",
             description: "本格中華が味わえるお店。<br>お得なランチはもちろん、甘くてもっちりな名物「正式杏仁豆腐」はシメに絶対食べたいオススメの一品です！<br><br>住所：<a href='https://maps.app.goo.gl/ZRxhQhYp9V6NC9pd7' target='_blank' rel='noopener noreferrer'>〒573-0101 大阪府枚方市長尾峠町1-55</a>",
-            images: ["./index_image/shop/2-kirin/1.png", "./index_image/shop/2-kirin/2.jpg", "./index_image/shop/2-kirin/3.jpg"]
+            images: ["./index_image/shop/2-kirin/1.jpg", "./index_image/shop/2-kirin/2.jpg", "./index_image/shop/2-kirin/3.jpg"]
         },
         "akamonya": {
             title: "赤門家",
-            description: "濃厚スープと150円でおかわり自由なライスが魅力の家系ラーメン。豊富な卓上調味料で味変も自由自在です。<br>暑い時期には限定の冷やしラーメンも味わえます！<br><br>住所：<a href='https://maps.app.goo.gl/oaNtxyekfCnwSijk7' target='_blank' rel='noopener noreferrer'>〒573-0102 大阪府枚方市長尾家具町1丁目1番</a>",
+            description: "濃厚スープと嬉しいライス1杯無料サービスが魅力の家系ラーメン。<br>卓上調味料で自分好みの味にアレンジできます。<br><br>住所：<a href='https://maps.app.goo.gl/oaNtxyekfCnwSijk7' target='_blank' rel='noopener noreferrer'>〒573-0102 大阪府枚方市長尾家具町1丁目1番</a>",
             images: ["./index_image/shop/3-akamonya/1.JPG", "./index_image/shop/3-akamonya/2.JPG"]
         },
         "yuraku-sushi": {
@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "meuble": {
             title: "ムーブル",
             description: "美味しい料理が味わえる居心地抜群のカフェ。<br>品数豊富な日替わりランチはもちろん、朝7時開店なので一人暮らしの朝食にもぴったりです！<br><br>住所：<a href='https://maps.app.goo.gl/qAp23sFiP7zf4q1C9' target='_blank' rel='noopener noreferrer'>〒573-0102 大阪府枚方市長尾家具町1丁目5-4</a>",
-            images: ["./index_image/shop/5-muble/1.png", "./index_image/shop/5-muble/2.png", "./index_image/shop/5-muble/3.png"]
+            images: ["./index_image/shop/5-muble/1.jpg", "./index_image/shop/5-muble/2.jpg", "./index_image/shop/5-muble/3.jpg"]
         },
         "tada-seika": {
             title: "多田製菓",
@@ -302,12 +302,14 @@ document.addEventListener('DOMContentLoaded', () => {
         "drugstore-cosmos": {
             title: "コスモス",
             description: "安さと品揃えが魅力のドラッグストア。<br>温めるだけの冷凍お弁当やラーメンなどが豊富に揃い、手軽に済ませたい毎日の食事に重宝しています！<br><br>住所：<a href='https://maps.app.goo.gl/8qK6UpcyUAzMy2Kz5' target='_blank' rel='noopener noreferrer'>〒573-0171 大阪府枚方市北山1丁目23-1</a>",
-            images: ["./index_image/shop/7-cosmos/1.png", "./index_image/shop/7-cosmos/2.png", "./index_image/shop/7-cosmos/3.JPG"]
+            images: ["./index_image/shop/7-cosmos/1.jpg"]
+            /* images: ["./index_image/shop/7-cosmos/1.jpg", "./index_image/shop/7-cosmos/2.jpg", "./index_image/shop/7-cosmos/3.JPG"] */
         },
         "yottette": {
             title: "よってって",
             description: "「新鮮・安心・安価」な農水産物が豊富に揃う直売所。<br>生産者直送の旬の野菜や果物、鮮魚まで幅広く並ぶ人気の市場です！<br><br>住所：<a href='https://maps.app.goo.gl/ycav86aDtXRpg9fa6' target='_blank' rel='noopener noreferrer'>〒573-0171 大阪府枚方市北山1丁目23-2</a>",
-            images: ["./index_image/shop/8-yottette/1.png", "./index_image/shop/8-yottette/2.png", "./index_image/shop/8-yottette/3.png"]
+            images: ["./index_image/shop/8-yottette/1.jpg"]
+            /* images: ["./index_image/shop/8-yottette/1.jpg", "./index_image/shop/8-yottette/2.jpg", "./index_image/shop/8-yottette/3.jpg"]*/
         },
         "campus-OIT": {
             title: "大阪工業大学 枚方キャンパス",
@@ -327,7 +329,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "nitori-mall": {
             title: "ニトリモール 枚方店",
             description: "ニトリやヤマダ電機、くら寿司など多彩な店舗が並ぶ大型モール。<br>ファッション、生活用品から飲食店まで幅広く揃い、買い物もランチもまとめて楽しめます！<br><br>住所：<a href='https://maps.app.goo.gl/JmVprFZFvUsyGWnB6' target='_blank' rel='noopener noreferrer'>〒573-0171 大阪府枚方市北山1丁目2-1</a>",
-            images: ["./index_image/shop/11-nitori/1.png", "./index_image/shop/11-nitori/ニトリモール内部.png", "./index_image/shop/11-nitori/ニトリモール内部2.png"]
+            images: ["./index_image/shop/11-nitori/1.jpg"]
+            /* images: ["./index_image/shop/11-nitori/1.jpg", "./index_image/shop/11-nitori/ニトリモール内部.jpg", "./index_image/shop/11-nitori/ニトリモール内部2.jpg"] */
         },
 
     };

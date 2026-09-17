@@ -67,7 +67,7 @@
     cursor: pointer;
     /* パーセント指定の位置に対応 */
     pointer-events: all;
-    cursor: pointer;
+    cursor: default;
 }
 
 .marker-dot {
@@ -119,6 +119,9 @@
     white-space: nowrap;
     opacity: 1;
     transition: background-color 0.3s, transform 0.3s;
+
+    /* マウスカーソル */
+    cursor: pointer;
 }
 
 .marker-label2 {
@@ -135,21 +138,30 @@
     opacity: 1;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 
+    /* マウスカーソル */
+    cursor: pointer;
 }
 
+/* クリック不可 */
 .marker-label-stuck {
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 5px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+
+    /* 既存のラベルと統一 */
+    color: #000;
+
     padding: 6px 10px;
     border-radius: 4px;
+
     font-size: 14px;
+    font-weight: 700;
     white-space: nowrap;
-    opacity: 1;
+
+    /* クリック不可 */
+    cursor: default;
+    pointer-events: none;
 }
 
 .map-marker:hover .marker-dot {
