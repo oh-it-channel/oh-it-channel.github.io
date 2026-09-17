@@ -149,7 +149,6 @@
     left: 50%;
     transform: translateX(-50%);
 
-    /* 既存のラベルと統一 */
     color: #000;
 
     padding: 6px 10px;
