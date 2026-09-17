@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+/* ==================================================
+   カード全体 & 共通設定
+   ================================================== */
+.main-contents .detail-card {
+    margin-bottom: 35px;
+    position: relative;
+    text-align: left;
+}
+
+.back-link {
+    color: #003380;
+    text-decoration: none;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 24px;
+}
+
+/* ==================================================
+   カード1：トップギャラリースライダー
+   ================================================== */
+.top-gallery-swiper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 2px solid #003380;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #000;
+}
+
+.top-gallery-swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* スライダーのボタン・ドット色調整 */
+.top-gallery-swiper .swiper-button-next,
+.top-gallery-swiper .swiper-button-prev {
+    color: #ffffff;
+    text-shadow: 0 0 4px rgba(0,0,0,0.8);
+    transform: scale(0.7);
+}
+
+.top-gallery-swiper .swiper-pagination-bullet-active {
+    background-color: #003380;
+}
+
+/* メイン情報テキストエリア */
+.detail-main-info {
+    padding-top: 5px;
+}
+
+.project-tag {
+    display: block;       /* 独立した1行にする */
+    width: fit-content;   /* 文字幅に収める */
+    /* デザイン用 */
+    background-color: #003380;
+    color: #ffffff;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 2px;
+    margin: 0 0 10px 10px;
+}
+
+/* セレクタを「.main-contents .detail-title」にして優先度を上げる */
+.main-contents .detail-title {
+    text-align: center !important;
+    font-family: 'DotGothic16', sans-serif;
+    color: #111111;
+    margin: 0 auto 0 auto;
+    line-height: 1.4;
+    font-size: 36px;
+}
+
+.detail-overview-text{
+    font-size: 10px;
+    line-height: 1.7;
+    color: #444444;
+    width: 90%;
+    text-align: justify;
+    margin: 20px auto 40px auto;
+}
+
+.detail-spec-list {
+    list-style: none;
+    padding: 12px 18px;
+    background-color: #f4f7fc;
+    margin: 20px auto 40px auto;
+    width: 90%;
+    
+    /* 縦並びに固定する設定 */
+    display: flex;
+    flex-direction: column; /* 1行ずつ下に並べる */
+    gap: 10px;               /* 行と行の間の余白 */
+}
+
+.detail-spec-list li {
+    font-size: 16px;
+    color: #444444;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+.detail-spec-list li span {
+    background: #003380;
+    color: #fff;
+    font-size: 16px;
+    padding: 4px 16px;
+    border-radius: 2px;
+    margin-right: 6px;
+}
+
+/* ==================================================
+   カード2：概要・見出し
+   ================================================== */
+.detail-section-title {
+    font-size: 36px;
+    font-family: 'DotGothic16', sans-serif;
+    color: #111111;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    margin-top: 30px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+}
+
+.detail-body {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333333;
+    width: 80%;
+    text-align: justify;
+    margin: 20px auto 10px auto;
+}
+
+/* ==================================================
+   カード3：リンク・アクション
+   ================================================== */
+/*SNS*/
+.sns-text{
+    text-align: center;
+}
+
+.sns-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;               /* 各SNSアイテム同士の間隔 */
+    margin: 20px 0;
+    padding: 0;
+}
+
+.sns-images li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;  /* 画像とテキストを縦に並べる */
+    align-items: center;     /* 左右中央揃え */
+    text-align: center;
+}
+
+.sns-logo{
+    max-width: 120px;
+    height: auto;
+    margin: 0 0 10px 0;      /* ★巨大な50pxマージンを消し、下だけに10pxの余白を設定 */
+    display: block;
+}
+
+.sns-link {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;   /* お好みで下線を消したい場合 */
+}
+
+
+.link-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: 'DotGothic16', sans-serif;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-hp {
+    background-color: #003380;
+    color: #ffffff;
+}
+
+.btn-x {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-back-main {
+    display: inline-block;
+    background-color: #003380;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'DotGothic16', sans-serif;
+    padding: 8px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* YouTube埋め込み枠のアスペクト比(16:9)維持設定 */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 の比率 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

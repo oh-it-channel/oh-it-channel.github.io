@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!--インデックスCSS，ナビゲーションCSS-->
+        <link rel="stylesheet" href="./style/reset.css">
+        <link rel="stylesheet" href="./style/PC/index.css">
+        <link rel="stylesheet" href="./style/PC/area.css">
+        <link rel="stylesheet" href="./style/PC/nav.css">
+        <link rel="stylesheet" href="./style/PC/event.css">
+        <link rel="stylesheet" href="./style/responsive/res_nav.css">
+
+        <!--レスポンシブCSS-->
+        <link rel="stylesheet" href="./style/responsive/res_index.css">
+        <link rel="stylesheet" href="./style/responsive/res_nav.css">
+        <link rel="stylesheet" href="./style/responsive/res_area.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        
+        <!--フォント-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Train+One&display=swap" rel="stylesheet">
+        
+        <title>Oh! IT チャンネル</title>
+    </head>
+    <body>
+        <!--マスク処理-->
+        <div class="mask" id="mask"></div>
+        <div id="wrap">
+            <!--タイトルとメニューバー-->
+            <header>
+                <!--ハンバーガーメニュー-->
+                <a class="menu-button" id="menu-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
+
+                <!--ナビゲーションバー-->
+                <div class="nav-bar">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./index_image/logo/logo_o.png" alt="" class="main-title"></a>
+                    </div>
+                    <nav id="nav-selector" class="nav-selector">
+                        <ul>
+                            <li class="nav-item"><a href="./index.html">TOP</a></li>
+                            <!--<li class="nav-item"><a href="./event.html">EVENT</a></li>-->
+                            <li class="nav-item"><a href="./campus.html">CAMPUS MAP</a></li>
+                            <li class="nav-item"><a class="selected" href="./area.html">AREA MAP</a></li>
+                            <li class="nav-item"><a href="./project.html">PROJECT</a></li>
+                            <li class="nav-item"><a href="./member.html">MEMBER</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <!--メインコンテンツ-->
+            <main>
+                <div class="bg_pattern Polka"></div>
+                <article>
+                    <section>
+                        <div class="main-contents">
+                            <div class="card">
+                                <span class="close-icon">×</span>
+                                <span class="square-icon">□</span>
+                                <span class="line-icon">‐</span>
+                                <h2>キャンパス周辺施設紹介マップ</h2>
+                                <div class="map-info">
+                                    <p>ご覧になりたい場所のマーカーをクリックすると、お店の詳細が見れます！</p>
+                                </div>
+                                <div class="campus-map-container">
+
+                                    <!-- 周辺施設マップ -->
+                                    <div class="campus-map-wrapper active" id="area-overview-map">
+                                        <!-- 周辺施設マップ画像 -->
+                                        <img src="./index_image/area_map2.png" alt="キャンパス周辺施設マップ" class="campus-map" id="area-overview">
+                                        
+                                        <!-- マップ上のマーカー（styleのleftとtopで位置を調整してください） -->
+                                        <div class="map-marker location-marker" data-location="campus-setsunan" style="left: 64%; top: 12%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label-stuck">摂南大学<br>枚方キャンパス</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="one-karubi" style="left: 45%; top: 22%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label2">ワンカルビ</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="kirinkaku" style="left: 47%; top: 27%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label1">麒麟閣</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="akamonya" style="left: 38%; top: 29%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label1">赤門家</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="yuraku-sushi" style="left: 66%; top: 33%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label1">有楽すし</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="meuble" style="left: 55%; top: 36%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label1">ムーブル</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="tada-seika" style="left: 90%; top: 59%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label2">多田製菓</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="drugstore-cosmos" style="left: 46%; top: 59%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label2">コスモス</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="yottette" style="left: 41%; top: 62%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label1">よってって</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="campus-OIT" style="left: 60%; top: 61%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label1">大阪工業大学<br>枚方キャンパス</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="tosa-shokudo" style="left: 94%; top: 64%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label1">土佐食堂</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="nitori-mall" style="left: 9%; top: 75%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label1">ニトリモール<br>枚方店</div>
+                                        </div>
+                                        <div class="map-marker location-marker" data-location="nagao-highschool" style="left: 40%; top: 83%;">
+                                            <span class="marker-dot"></span>
+                                            <div class="marker-label-stuck">長尾高等学校</div>
+                                        </div>
+                                        <div class="click-prompt" style="left: 70%; top: 90%;">
+                                            建物をクリック！
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </main>
+
+            <!--フッター-->
+            <footer>
+                <div class="footer-contents">
+                    <h3>Menu</h3>
+                    <ul>
+                        <a href="./index.html"><li>TOP</li></a>
+                        <!--<a href="./event.html"><li>EVENT</li></a>-->
+                        <a href="./campus.html"><li>CAMPUS MAP</li></a>
+                        <a href="./area.html"><li>AREA MAP</li></a>
+                        <a href="./project.html">PROJECT</a></li>
+                        <a href="./member.html"><li>MEMBER</li></a>
+                    </ul>
+                </div>
+                <div class="footer-contents">
+                <h3>SNS</h3>
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCBF_4PB_w_rLQwC25S_obXw" target="_blank">Youtube</a></li>
+                        <li><a href="https://www.instagram.com/oh_it_channel/"target="_blank">Instagram</a></li>
+                        <li><a href="https://twitter.com/Oh_IT_Channel" target="_blank">X(旧Twitter)</a></li>
+                    </ul>
+                </div>
+                <small class="clear">&copy;2021-2025 Oh! IT チャンネル</small>
+            </footer>
+        </div>
+        
+        <!--JavaScript読み込み-->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src = "./js/header.js"></script>
+        <script src="./js/nav.js"></script>
+        <script src="./js/campus.js"></script>
+        <script src="./js/area.js"></script>
+
+
+        <!-- モーダルコンテンツ本体 -->
+        <div id="location-modal-mask" class="modal-mask"></div>
+        <div id="location-modal" class="location-modal">
+            <div class="modal-content">
+                <!-- ▼ ここに右上の「×」ボタンを配置します ▼ -->
+                <button type="button" id="modal-close-btn" class="modal-close-btn">×</button>
+                
+                <!-- 画像スライダー -->
+                <div class="swiper myLocationSwiper">
+                    <div class="swiper-wrapper" id="modal-swiper-wrapper"></div>
+                    <!-- 左右の矢印ボタン（クリックでスライド） -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- 下部のドット（ページネーション） -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- 説明文 -->
+                <div id="modal-description" class="modal-description"></div>
+            </div>
+        </div>
+    </body>
+</html>

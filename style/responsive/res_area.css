@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* キャンパスページ レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    .campus-map-wrapper {
+        max-width: 100%;
+    }
+    
+    .marker-dot {
+        width: 16px;
+        height: 16px;
+        border-width: 2px;
+    }
+    
+    .marker-label1,
+    .marker-label2,
+    .marker-label-stuck {
+        font-size: 8px;
+        padding: 2px 4px;
+        margin-top: 2px;
+    }
+    
+    /* マーカーとラベルの距離を縮める（PC版の35px → 20pxへ） */
+    .marker-label1 {
+        top: 20px;
+    }
+    
+    .marker-label2 {
+        bottom: 20px;
+    }
+
+    .building-marker .marker-dot {
+        width: 20px;
+        height: 20px;
+    }
+
+    .map-nav-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .back-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    /* マップラベルの位置調整 */
+    .map-marker[data-location="library"] .marker-label {
+        transform: translateX(-55%);
+        top: 25px;
+    }
+
+    .map-marker[data-location="dxfield"] .marker-label {
+        transform: translateX(-50%);
+        top: 20px;
+    }
+    
+    /* 食堂マーカーのラベル位置調整 */
+    .map-marker[data-location="cafeteria"] .marker-label {
+        transform: translateX(-50%);
+        top: 25px;
+    }
+    
+    /* エントランスマーカーのラベル位置調整 */
+    .map-marker[data-location="entrance"] .marker-label {
+        transform: translateX(-50%);
+        top: 25px;
+    }
+
+    /* 屋上マーカーのラベル位置調整 */
+    .map-marker[data-location="rooftop"] .marker-label {
+        transform: translateX(-50%);
+        top: 25px;
+    }
+    
+    /* 休憩室マーカーのラベル位置調整 */
+    .map-marker[data-location="restroom"] .marker-label {
+        transform: translateX(-50%);
+        top: 25px;
+    }
+
+    /* コンビニマーカーのラベル位置調整 */
+    .map-marker[data-location="convenience"] .marker-label {
+        transform: translateX(-50%);
+        top: 20px;
+        left: 20px;
+    }
+
+    /* 1号館マーカーのラベル位置調整 */
+    .building-marker[data-building="building-1"] .marker-label {
+        transform: translateX(-50%);
+        top: 25px;
+    }
+    
+    /* スマホ版での「クリック！」テキスト調整 */
+    .click-prompt {
+        font-size: 12px;
+        padding: 4px 8px;
+    }  
+} 

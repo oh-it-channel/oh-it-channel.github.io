@@ -1,0 +1,32 @@
+/* ==================================================
+   レスポンシブ対応
+   ================================================== */
+
+/* タブレット・スマホ (767px以下) */
+@media screen and (max-width: 767px) {
+    .project-container {
+        grid-template-columns: 1fr;
+        gap: 25px 0;
+    }
+
+    .text-contents {
+        width: 95%;
+        margin-bottom: 30px;
+    }
+
+    .text-contents p {
+        font-size: 14px;
+    }
+
+    .project-card-body {
+        padding: 16px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+
+    .project-sub {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!--インデックスCSS，ナビゲーションCSS-->
+        <link rel="stylesheet" href="../style/reset.css">
+        <link rel="stylesheet" href="../style/PC/index.css">
+        <link rel="stylesheet" href="../style/PC/nav.css">
+        <link rel="stylesheet" href="../style/PC/info.css">
+        <link rel="stylesheet" href="../style/PC/project_detail.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+        <!--レスポンシブCSS-->
+        <link rel="stylesheet" href="../style/responsive/res_index.css">
+        <link rel="stylesheet" href="../style/responsive/res_nav.css">
+        <link rel="stylesheet" href="../style/responsive/res_project.css">
+        <link rel="stylesheet" href="../style/responsive/res_project_detail.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+        <!--フォント-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Train+One&display=swap" rel="stylesheet">
+
+        <title>AIスマートカー | Oh! IT チャンネル</title>
+    </head>
+    <body>
+        <!--マスク処理-->
+        <div class="mask" id="mask"></div>
+        <div id="wrap">
+            <!--タイトルとメニューバー-->
+            <header>
+                <!--ハンバーガーメニュー-->
+                <a class="menu-button" id="menu-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
+                
+                <!--ナビゲーションバー-->
+                <div class="nav-bar">
+                    <div class="logo">
+                        <a href="../index.html"><img src="../index_image/logo/logo_o.png" alt="Oh! IT チャンネル" class="main-title"></a>
+                    </div>
+                    <nav id="nav-selector" class="nav-selector">
+                        <ul>
+                            <li class="nav-item"><a href="../index.html">TOP</a></li>
+                            <li class="nav-item"><a href="../campus.html">CAMPUS MAP</a></li>
+                            <li class="nav-item"><a href="../area.html">AREA MAP</a></li>
+                            <li class="nav-item"><a class="selected" href="../project.html">PROJECT</a></li>
+                            <li class="nav-item"><a href="../member.html">MEMBER</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <!--メインコンテンツ-->
+            <main>
+                <div class="bg_pattern Polka"></div>
+                <article>
+                    <section>
+                        <div class="main-contents">
+
+                            <div class="card detail-card">
+                                <span class="close-icon">×</span>
+                                <span class="square-icon">□</span>
+                                <span class="line-icon">‐</span>
+                                <div class="swiper top-gallery-swiper">
+                                    <div class="swiper-wrapper">
+                                        <!-- 画像スライド -->
+                                        <div class="swiper-slide">
+                                            <img src="../index_image/project/aicar/1.jpeg" alt="活動風景1">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../index_image/project/aicar/2.jpeg" alt="活動風景2">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../index_image/project/aicar/3.jpeg" alt="活動風景2">
+                                        </div>
+
+                                        <!-- ★ YouTube動画スライド（動画ID部分を実際のURLのIDに置き換えてください） -->
+                                        <div class="swiper-slide">
+                                            <div class="video-container">
+                                                <iframe 
+                                                    src="https://www.youtube.com/embed/drEPXSPtuDw" 
+                                                    title="YouTube video player" 
+                                                    frameborder="0" 
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                                    allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+
+                                <div class="detail-main-info">
+                                    <span class="project-tag">学生プロジェクト</span>
+                                </div>
+                                <h3 class="detail-title">AIスマートカー開発プロジェクト</h3>
+                                <div class="detail-main-info">
+                                    <div class="detail-overview-text">
+                                        <p>
+                                            公道での自律走行や視覚認識を行えるAI搭載ロボットを学生と教員で研究開発し、中之島やつくばでの自律走行チャレンジ等の競技会に参加しています。
+                                        </p>
+                                    </div>
+                                    <ul class="detail-spec-list">
+                                        <li><span>主な対象<br></span> 　全学年・全学科</li>
+                                        <li><span>活動場所<br></span> 　枚方キャンパス ヒューマンロボティクス研究開発センター</li>
+                                        <li><span>使用機器<br></span> 　3D-LiDAR / IMU / 自律走行ロボット</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card detail-card">
+                                <span class="close-icon">×</span>
+                                <span class="square-icon">□</span>
+                                <span class="line-icon">‐</span>
+
+                                <div class="detail-section">
+                                    <h3 class="detail-section-title">関連ページ・SNS</h3>
+                                    <p class="detail-body">プロジェクトの詳しい活動内容や最新情報は、以下の公式Webサイト・SNSをご覧ください。</p>
+                                </div>
+                                <ul class="sns-images">
+                                    <li>
+                                        <a href="https://www.oit.ac.jp/labs/is/hrc/" target="_blank"><img src="../index_image/SNS/symbol011.png" alt="" class="sns-logo"></a>
+                                        <br><a href="https://www.oit.ac.jp/labs/is/hrc/" target="_blank" class="sns-link">HRC 公式Webサイト</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://x.com/atan2sin" target="_blank"><img src="../index_image/SNS/logo-black.png" alt="" class="sns-logo"></a>
+                                        <br><a href="https://x.com/atan2sin" target="_blank" class="sns-link">担当教員 X (旧Twitter)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="detail-footer-action">
+                                    <a href="../project.html" class="btn-back-main">一覧に戻る</a>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </main>
+
+            <footer>
+                <div class="footer-contents">
+                    <h3>Menu</h3>
+                    <ul>
+                        <a href="../index.html"><li>TOP</li></a>
+                        <a href="../campus.html"><li>CAMPUS MAP</li></a>
+                        <a href="../area.html"><li>AREA MAP</li></a>
+                        <a href="../project.html"><li>PROJECT</li></a>
+                        <a href="../member.html"><li>MEMBER</li></a>
+                    </ul>
+                </div>
+                <div class="footer-contents">
+                    <h3>SNS</h3>
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCBF_4PB_w_rLQwC25S_obXw" target="_blank" rel="noopener">Youtube</a></li>
+                        <li><a href="https://www.instagram.com/oh_it_channel/" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a href="https://twitter.com/Oh_IT_Channel" target="_blank" rel="noopener">X(旧Twitter)</a></li>
+                    </ul>
+                </div>
+                <small class="clear">&copy;2021-2025 Oh! IT チャンネル</small>
+            </footer>
+        </div>
+        
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="../js/header.js"></script>
+        <script src="../js/nav.js"></script>
+        <script src="../js/project.js"> </script>
+    </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!--インデックスCSS，ナビゲーションCSS-->
+        <link rel="stylesheet" href="./style/reset.css">
+        <link rel="stylesheet" href="./style/PC/index.css">
+        <link rel="stylesheet" href="./style/PC/nav.css">
+        <link rel="stylesheet" href="./style/PC/info.css">
+        <link rel="stylesheet" href="./style/PC/project.css">
+        <link rel="stylesheet" href="./style/responsive/res_nav.css">
+
+        <!--レスポンシブCSS-->
+        <link rel="stylesheet" href="./style/responsive/res_index.css">
+        <link rel="stylesheet" href="./style/responsive/res_nav.css">
+        <link rel="stylesheet" href="./style/responsive/res_project.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+        <!--フォント-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Train+One&display=swap" rel="stylesheet">
+
+        <title>PROJECT | Oh! IT チャンネル</title>
+    </head>
+    <body>
+        <!--マスク処理-->
+        <div class="mask" id="mask"></div>
+        <div id="wrap">
+            <!--タイトルとメニューバー-->
+            <header>
+                <!--ハンバーガーメニュー-->
+                <a class="menu-button" id="menu-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
+                
+                <!--ナビゲーションバー-->
+                <div class="nav-bar">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./index_image/logo/logo_o.png" alt="Oh! IT チャンネル" class="main-title"></a>
+                    </div>
+                    <nav id="nav-selector" class="nav-selector">
+                        <ul>
+                            <li class="nav-item"><a href="./index.html">TOP</a></li>
+                            <li class="nav-item"><a href="./campus.html">CAMPUS MAP</a></li>
+                            <li class="nav-item"><a href="./area.html">AREA MAP</a></li>
+                            <li class="nav-item"><a class="selected" href="./project.html">PROJECT</a></li>
+                            <li class="nav-item"><a href="./member.html">MEMBER</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <!--メインコンテンツ-->
+            <main>
+                <div class="bg_pattern Polka"></div>
+                <article>
+                    <section>
+                        <div class="main-contents">
+
+                            <!-- 全体を包むメインウィンドウ -->
+                            <div class="card">
+                                <span class="close-icon">×</span>
+                                <span class="square-icon">□</span>
+                                <span class="line-icon">‐</span>
+                                <h2>PROJECT</h2>
+
+                                <!-- リード文エリア -->
+                                <div class="text-contents">
+                                    <p>
+                                        情報科学部では学年・学科・研究室の垣根を超え、教員・学生が一体となって挑むプロジェクトを実施しています。<br>
+                                        学生は入学直後から積極的にこうした活動に参加し、行動力や思考力を磨いています。<br>
+                                    </p>
+                                </div>
+
+                                <!-- 2つ並びのプロジェクトカードコンテナ -->
+                                <div class="project-container">
+
+                                    <!-- 1. MAGIOT -->
+                                    <a href="./p-detail_html/magiot.html" class="project-card">
+                                        <div class="project-img-box">
+                                            <img src="./index_image/project/magiot/3.png" alt="IT×リアル謎解きゲーム">
+                                            <div class="project-overlay">
+                                                <span>VIEW MORE</span>
+                                            </div>
+                                        </div>
+                                        <div class="project-card-body">
+                                            <span class="project-tag">学生プロジェクト</span>
+                                            <h3 class="project-title">IT×リアル謎解きゲーム作成プロジェクト</h3>
+                                            <p class="project-sub">リアル脱出ゲーム / IT・ものづくり / 謎解き企画</p>
+                                        </div>
+                                    </a>
+
+                                    <!-- 2. AIスマートカー -->
+                                    <a href="./p-detail_html/aicar.html" class="project-card">
+                                        <div class="project-img-box">
+                                            <img src="./index_image/project/aicar/1.jpeg" alt="AIスマートカー">
+                                            <div class="project-overlay">
+                                                <span>VIEW MORE</span>
+                                            </div>
+                                        </div>
+                                        <div class="project-card-body">
+                                            <span class="project-tag">学生プロジェクト</span>
+                                            <h3 class="project-title">AIスマートカー開発プロジェクト</h3>
+                                            <p class="project-sub">屋外自律走行 / 3D-LiDAR・ROS / AIロボット</p>
+                                        </div>
+                                    </a>
+
+                                    <!-- 3. 国際PBL -->
+                                    <a href="./p-detail_html/PBL.html" class="project-card">
+                                        <div class="project-img-box">
+                                            <img src="./index_image/project/PBL/1-1.jpg" alt="国際PBL">
+                                            <div class="project-overlay">
+                                                <span>VIEW MORE</span>
+                                            </div>
+                                        </div>
+                                        <div class="project-card-body">
+                                            <span class="project-tag">国際交流プログラム</span>
+                                            <h3 class="project-title">国際PBLプログラム</h3>
+                                            <p class="project-sub">海外学生協働 / 英語コミュニケーション / 課題解決</p>
+                                        </div>
+                                    </a>
+
+                                </div><!-- /.project-container -->
+                            </div><!-- /.card -->
+
+                        </div>
+                    </section>
+                </article>
+            </main>
+
+            <!--フッター-->
+            <footer>
+                <div class="footer-contents">
+                    <h3>Menu</h3>
+                    <ul>
+                        <a href="./index.html"><li>TOP</li></a>
+                        <a href="./campus.html"><li>CAMPUS MAP</li></a>
+                        <a href="./area.html"><li>AREA MAP</li></a>
+                        <a href="./project.html"><li>PROJECT</li></a>
+                        <a href="./member.html"><li>MEMBER</li></a>
+                    </ul>
+                </div>
+                <div class="footer-contents">
+                    <h3>SNS</h3>
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCBF_4PB_w_rLQwC25S_obXw" target="_blank" rel="noopener">Youtube</a></li>
+                        <li><a href="https://www.instagram.com/oh_it_channel/" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a href="https://twitter.com/Oh_IT_Channel" target="_blank" rel="noopener">X(旧Twitter)</a></li>
+                    </ul>
+                </div>
+                <small class="clear">&copy;2021-2025 Oh! IT チャンネル</small>
+            </footer>
+        </div>
+        
+        <!--JavaScript読み込み-->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./js/header.js"></script>
+        <script src="./js/nav.js"></script>
+    </body>
+</html>
